@@ -1,0 +1,95 @@
+name = "RHEL-GOLDEN-IMAGE"
+description = "RHEL Golden Image"
+version = "0.0.7"
+modules = []
+groups = []
+distro = "REPLACEME-DISTRO"
+
+[[packages]]
+name = "bind-utils"
+
+[[packages]]
+name = "chrony"
+
+[[packages]]
+name = "lvm2"
+
+[[packages]]
+name = "wget"
+
+[[packages]]
+name = "git"
+
+[[packages]]
+name = "openssh-server"
+
+[[packages]]
+name = "bash-completion"
+
+[[packages]]
+name = "firewalld"
+
+[[packages]]
+name = "openscap-scanner"
+
+[[packages]]
+name = "openscap-utils"
+
+[[packages]]
+name = "scap-security-guide"
+
+[[packages]]
+name = "insights-client"
+
+[[packages]]
+name = "rhc"
+
+[[packages]]
+name = "rhc-worker-playbook"
+
+[[packages]]
+name = "glibc-langpack-en"
+
+[[packages]]
+name = "langpacks-en"
+
+[[packages]]
+name = "ansible-core"
+
+[[packages]]
+name = "rhel-system-roles"
+
+[customizations]
+
+[[customizations.user]]
+name = "rexuser"
+password = "$6$OuzMSKSLl4nqcFZt$CyJ6ty.w1fCUYSSPitIBb7os4Yga6naL0SdxxYATccVYNaW6an.jfOqTKM7fxC..l5eD80rD9BeeIP8CFIV2Q0"
+key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDF02G9RHVBpibuuniFllSPIqW1RJCnFQdhHlDg8BbiRgyiOjvAmCNz+B6rL/4WUmdMda7cUOQW7zaZKulXIRi36AC5wbZ9WY3bnn3DSER29qCTB97CnhOLL3R8rvFzKQswjYRsSJmNH0yQavI30cXvNyIJtsESSHRvkkFUx+zcv/dBCxNURIjiJhpGFaCeoq7s4Vqa3qPxLl7K0wAXlktFmPUm2RCzwBE5VfrWx36ptpOAynWE8xAr++7F3SrA0e5ebF9Oxla8iy10EscB3CE1BJhrKVP3QlIjklx7VXWH94P/Zzm4gUi5Ac3rwlKjylzFaK2rkwPTei4EwK1yOwqHb1XhuF56p73hctPXAimUPlRCc/82xaw9Ky5afKc3/wMXitJlAIaY+29h63uJnKKbvjdlqcMmYnfHQyhAtiMoqkKq74YeDqzJhCH2OsXthSL73PZTaU82o8KrHt/hzonZRKqSaO/UCHnshyTvuRznn2U5M5/Y33IKZzIh2gyx3/k= "
+groups = ["wheel"]
+
+[customizations.timezone]
+timezone = "Europe/Stockholm"
+ntpservers = ["0.rhel.pool.ntp.org", "1.rhel.pool.ntp.org"]
+
+[customizations.locale]
+languages = ["en_US.UTF-8"]
+keyboard = "sv-latin1"
+
+[customizations.firewall]
+[customizations.firewall.services]
+enabled = ["cockpit", "ssh"]
+
+[customizations.services]
+enabled = ["cockpit.socket", "sshd.service"]
+
+[[customizations.filesystem]]
+mountpoint = "/home"
+size = 1073741824
+
+[[customizations.filesystem]]
+mountpoint = "/tmp"
+size = 1073741824
+
+[[customizations.filesystem]]
+mountpoint = "/"
+size = 5368709120
