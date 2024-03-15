@@ -1,4 +1,4 @@
-name = "RHEL-GOLDEN-IMAGE"
+name = "rhel-golden-image"
 description = "RHEL Golden Image"
 version = "0.0.7"
 modules = []
