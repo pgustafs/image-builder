@@ -66,6 +66,7 @@ name = "rexuser"
 password = "$6$OuzMSKSLl4nqcFZt$CyJ6ty.w1fCUYSSPitIBb7os4Yga6naL0SdxxYATccVYNaW6an.jfOqTKM7fxC..l5eD80rD9BeeIP8CFIV2Q0"
 key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDF02G9RHVBpibuuniFllSPIqW1RJCnFQdhHlDg8BbiRgyiOjvAmCNz+B6rL/4WUmdMda7cUOQW7zaZKulXIRi36AC5wbZ9WY3bnn3DSER29qCTB97CnhOLL3R8rvFzKQswjYRsSJmNH0yQavI30cXvNyIJtsESSHRvkkFUx+zcv/dBCxNURIjiJhpGFaCeoq7s4Vqa3qPxLl7K0wAXlktFmPUm2RCzwBE5VfrWx36ptpOAynWE8xAr++7F3SrA0e5ebF9Oxla8iy10EscB3CE1BJhrKVP3QlIjklx7VXWH94P/Zzm4gUi5Ac3rwlKjylzFaK2rkwPTei4EwK1yOwqHb1XhuF56p73hctPXAimUPlRCc/82xaw9Ky5afKc3/wMXitJlAIaY+29h63uJnKKbvjdlqcMmYnfHQyhAtiMoqkKq74YeDqzJhCH2OsXthSL73PZTaU82o8KrHt/hzonZRKqSaO/UCHnshyTvuRznn2U5M5/Y33IKZzIh2gyx3/k= "
 groups = ["wheel"]
+uid = 5001
 
 [customizations.timezone]
 timezone = "Europe/Stockholm"
